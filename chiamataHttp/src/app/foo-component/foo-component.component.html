@@ -4,3 +4,14 @@
 <pre>{{data | json}}</pre>         <!--Il costrutto <pre> visualizza il codice ritornato all’interno della variabile data.-->
 
 <button type="button" (click)="makeCompactPost()">Fai il post</button>
+
+<button type="button" (click)="makeTypedRequest()">Make typed request</button>
+<!--Uso un ciclo for per scandire tutta la lista di articoli-->
+<div *ngFor="let art of fooData">
+  <h3>{{art.title}}</h3>
+  <b>post {{art.id}} di utente #: {{art.userId}}</b>
+  <div>
+    {{art.body}}
+  </div>
+  <hr>
+</div>
