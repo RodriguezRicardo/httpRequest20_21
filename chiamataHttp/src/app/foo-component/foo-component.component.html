@@ -1,0 +1,6 @@
+<h2>Una basica richiesta</h2>
+<button type="button" (click)="makeRequest()">Fai la richiesta</button>  <!--un bottone che richiama il metodo makeRequest()-->
+<div *ngIf="loading">caricamento...</div>    <!--Utilizziamo il costrutto *ngif per visualizzare il div “loading…” -->
+<pre>{{data | json}}</pre>         <!--Il costrutto <pre> visualizza il codice ritornato all’interno della variabile data.-->
+
+<button type="button" (click)="makeCompactPost()">Fai il post</button>
